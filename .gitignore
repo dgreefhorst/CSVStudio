@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Gebouwde app en hulpmiddelen (build.sh)
+build/
+
+# Xcode
+DerivedData/
+xcuserdata/
+*.xcuserstate
+
+# Command Code (lokale sessie-instellingen en taste)
+.commandcode/
