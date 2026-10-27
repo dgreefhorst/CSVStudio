@@ -60,6 +60,10 @@ enum Vocabularies {
             properties: ["theme", "keyword", "distribution", "dataset", "service", "landingPage", "accessURL", "downloadURL", "mediaType", "byteSize", "contactPoint", "endpointURL", "endpointDescription", "version", "temporalResolution", "spatialResolution", "compressFormat", "packageFormat", "startDate", "endDate", "record", "catalog", "inSeries"],
             classes: ["Catalog", "Dataset", "Distribution", "DataService", "CatalogRecord", "Resource", "DatasetSeries", "Relationship", "Role"]),
         Vocabulary(
+            prefix: "dqv", namespace: "http://www.w3.org/ns/dqv#", title: "Data Quality Vocabulary (DQV)",
+            properties: ["hasQualityMeasurement", "hasQualityAnnotation", "hasQualityMetadata", "isMeasurementOf", "computedOn", "value", "inDimension", "inCategory", "expectedDataType"],
+            classes: ["QualityMeasurement", "QualityMeasurementDataset", "QualityMetadata", "QualityPolicy", "QualityAnnotation", "QualityCertificate", "UserQualityFeedback", "Metric", "Dimension", "Category"]),
+        Vocabulary(
             prefix: "org", namespace: "http://www.w3.org/ns/org#", title: "W3C Organization",
             properties: ["memberOf", "hasMember", "headOf", "subOrganizationOf", "hasSubOrganization", "hasUnit", "unitOf", "role", "holds", "heldBy", "reportsTo", "hasSite", "hasPost", "postIn", "basedAt", "linkedTo", "purpose", "classification", "organization", "member"],
             classes: ["Organization", "FormalOrganization", "OrganizationalUnit", "OrganizationalCollaboration", "Membership", "Role", "Post", "Site"]),
